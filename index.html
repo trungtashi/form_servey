@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form lấy survey khách hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <form action="index.html" method="get">
+        <!-- Get age -->
+        <p><b>What is your age range?</b></p> </label>
+        <select name="age" id="" style="width: 50%; height: 25px;">
+            <option value="1">18-24</option>
+            <option value="2">25-34</option>
+            <option value="3">35-50</option>
+            <option value="4">50+</option>
+        </select>
+        <!-- Get cost -->
+        <p><b>What is your yearly income range?</b></p> </label>
+        <select name="cosst" id=""  style="width: 50%;  height: 25px;">
+            <option value="1">$0-$25,000</option>
+            <option value="2">$25,001-$50,000</option>
+            <option value="3">$50,001-$100,000</option>
+            <option value="4">$100,000+</option>
+        </select>
+        <!-- Gender Identity -->
+        <p><b>Gender Identity</b></p>
+        <label for="male">
+            <input type="radio" name="gender" id="male"> Male 
+        </label> <br> <br>
+        <label for="female">
+            <input type="radio" name="gender" id="female"> Female
+        </label> <br> <br>
+        <label for="nonbinary">
+            <input type="radio" name="gender" id="nonbinary"> Nonbinary 
+        </label> <br> <br>
+        <label for="other">
+            <input type="radio" name="gender" id="other"> Other <br> <br>
+            &nbsp; &nbsp; &nbsp; <input type="text" > 
+        </label> <br> <br>
+        <!-- product -->
+        <p><b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b></p>
+        <label for="product1">
+            <input type="checkbox" name="" id="product1" > Product 1
+        </label> <br> <br>
+        <label for="product2">
+            <input type="checkbox" name="" id="product2" > Product 2
+        </label> <br> <br>
+        <label for="product3">
+            <input type="checkbox" name="" id="product3" > Product 3
+        </label> <br><br>
+        <!-- New product -->
+        <p><b>How often would you use our new product?</b></p>
+        <label for="Daily">
+            <input type="radio" name="new_product" id="Daily" > Daily
+        </label> <br> <br>
+        <label for="Weekly">
+            <input type="radio" name="new_product" id="Weekly" > Weekly
+        </label> <br> <br>
+        <label for="Monthly">
+            <input type="radio" name="new_product" id="Monthly" > Monthly
+        </label> <br><br>
+        <!-- pay for the new product -->
+        &nbsp;
+        <label for="">
+            $ <input type="text" name="$" id="" style="width: 50px;">
+        </label>
+        <label for="">
+            . <input type="text" name="." id="" style="width: 20px;">
+        </label> <br><br>
+        <label for="">
+            <input type="submit" value="submit">
+        </label>
+    </form>
+</body>
+</html>
